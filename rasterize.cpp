@@ -75,6 +75,8 @@ void init_edges(vector<edge_t> &edges) {
   // edges.push_back(edge_t(vertex[0], vertex[1]));
   // edges.push_back(edge_t(vertex[0], vertex[2]));
   // edges.push_back(edge_t(vertex[1], vertex[2]));
+  
+  sort(edges.begin(), edges.end());
 }
 
 void print_edges(vector<edge_t> &edges) {
