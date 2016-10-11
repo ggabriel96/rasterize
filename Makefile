@@ -1,7 +1,7 @@
-all: rasterize
+all: rasterize.o
 
-rasterize: rasterize.cpp
-	g++ rasterize.cpp -o rasterize -Wall -O2 -std=c++11
+rasterize.o: rasterize.cpp
+	g++ rasterize.cpp -o rasterize.o -Wall -O2 -std=c++11
 
 clean:
-	rm rasterize
+	rm rasterize.o
